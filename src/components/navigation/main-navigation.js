@@ -11,8 +11,8 @@ const MainNavigation = () => {
             </div>
 
             <div className="main-navigation-right">
-                <NavLink to="/login" activeClassName="active" className={"main-navigation-link"}>Login</NavLink>
-                <NavLink to="/signup" activeClassName="active" className={"main-navigation-link"}>Sign Up</NavLink>
+                <NavLink to="/auth/login" activeClassName="active" className={"main-navigation-link"}>Login</NavLink>
+                <NavLink to="/auth/signup" activeClassName="active" className={"main-navigation-link"}>Sign Up</NavLink>
             </div>
         </nav>
     )
