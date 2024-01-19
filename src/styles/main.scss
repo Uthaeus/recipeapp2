@@ -1,2 +1,10 @@
 @import 'bootstrap';
 @import 'bootstrap-icons';
+
+@import 'main-navigation';
+@import 'home';
+@import 'error';
+
+* {
+    box-sizing: border-box;
+}
