@@ -1,5 +1,10 @@
 
 import { Link } from "react-router-dom";
+
+import Sidebar from "../components/sidebar/sidebar";
+import { DUMMY_DATA } from "../store/DUMMY_DATA";
+import RecipeItem from "../components/recipe/recipeItem";
+
 function Home() {
     const [message, setMessage] = useState(false);
 
@@ -15,14 +20,19 @@ function Home() {
                     <h1 className="home-recipes-title">Recipes</h1>
 
                     <div className="home-recipes-list">
-                        <Link to='/' className="home-recipes-list-item">Recipe 1</Link>
-                        <Link to='/' className="home-recipes-list-item">Recipe 2</Link>
-                        <Link to='/' className="home-recipes-list-item">Recipe 3</Link>
+                        {DUMMY_DATA.map((recipe) => (
+                            <RecipeItem
+                                key={recipe.id}
+                                title={recipe.title}
+                                description={recipe.description}
+                                time={recipe.time}
+                            />
+                        ))}
                     </div>
                 </div>
             </div>
 
-            {/* sidebar */}
+            <Sidebar />
         </div>
     );
 }
