@@ -6,7 +6,6 @@ import { DUMMY_DATA } from "../store/DUMMY_DATA";
 import RecipeItem from "../components/recipe/recipeItem";
 
 function Home() {
-    const [message, setMessage] = useState(false);
 
     return (
         <div className="home">

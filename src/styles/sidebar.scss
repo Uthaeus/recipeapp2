@@ -1,0 +1,33 @@
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0.5rem;
+    background-color: #fff;
+    border-right: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+    .sidebar-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+
+    .sidebar-list {
+        list-style: none;
+        margin-left: 0.5rem;
+        margin-bottom: 0.5rem;
+
+        .sidebar-list-item {
+            margin-bottom: 0.5rem;
+            color: rgb(1, 18, 97);
+            font-size: 0.9rem;
+            transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+            &:hover {
+                color: #003a79;
+                transform: scale(1.05);
+            }
+        }
+    }
+}

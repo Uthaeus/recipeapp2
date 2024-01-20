@@ -3,11 +3,12 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
     padding: 1rem 1.5rem;
+    background-color: azure;
+    min-height: 100vh;
 
     .home-left {
         display: flex;
         flex-direction: column;
-        min-height: 100vh;
 
         .home-header {
             display: flex;
