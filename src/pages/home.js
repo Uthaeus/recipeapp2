@@ -31,8 +31,10 @@ function Home() {
                     </div>
                 </div>
             </div>
-
-            <Sidebar />
+            
+            <div className="home-right">
+                <Sidebar />
+            </div>
         </div>
     );
 }
